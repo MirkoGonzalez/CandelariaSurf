@@ -13,6 +13,11 @@
 
 /* My custom css */
 
+.carousel-item{
+ 
+  object-fit: cover;
+}
+
 .btn-masterhead{
   margin: 3%;
 }
@@ -853,6 +858,7 @@ textarea.form-control {
 
 .d-block {
   display: block !important;
+
 }
 
 .d-none {
@@ -1056,8 +1062,8 @@ p {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   background-color: #212529;
 }
 #mainNav .navbar-toggler {
@@ -1452,10 +1458,14 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #000000;
-  background-image: linear-gradient(to bottom,transparent, #9f9f9f), url("../assets/img/map-image.png");
+  background-image: linear-gradient(to bottom,black,transparent), url("../assets/img/contact.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size:cover;
+  background-blur: 5px; /* reduce la opacidad */
+  filter: grayscale(100%); /* convierte la imagen en blanco y negro */
 }
+
 section#contact .section-heading, section#contact .section-subheading {
   color: #fff;
 }
