@@ -13,7 +13,14 @@
 
 /* My custom css */
 
-
+/* FlexBox */
+.container-flex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 1.5 rem;
+}
 
 #contact .container{
   margin-top: 100px;
@@ -58,11 +65,13 @@ background: linear-gradient(to bottom, black, rgb(124, 124, 124));
   background: linear-gradient(to bottom,  white, rgb(124, 124, 124));
 }
 
-
-
 .descripcion-taller{
   font-size: 1.5rem;
 }
+
+#carouselTaller{
+  max-width: 60%;
+  }
 
  #team{
   background: linear-gradient(to bottom, rgb(124, 124, 124), rgb(0, 0, 0));
@@ -1270,7 +1279,7 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .team-member img {
-  width: 100%;
+  width: 80%;
   height: auto;
   object-fit: cover;
 
